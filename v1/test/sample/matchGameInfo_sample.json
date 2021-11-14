@@ -1,0 +1,610 @@
+{
+  "gaming": false,
+  "ending": false,
+  "board": {
+    "name": "A-1",
+    "width": 10,
+    "height": 10,
+    "nAgent": 8,
+    "nPlayer": 2,
+    "nTurn": 30,
+    "nSec": 1,
+    "points": [
+      12,
+      3,
+      5,
+      3,
+      1,
+      1,
+      3,
+      5,
+      3,
+      12,
+      3,
+      5,
+      7,
+      5,
+      3,
+      3,
+      5,
+      7,
+      5,
+      3,
+      5,
+      7,
+      10,
+      7,
+      5,
+      5,
+      7,
+      10,
+      7,
+      5,
+      3,
+      5,
+      7,
+      5,
+      3,
+      3,
+      5,
+      7,
+      5,
+      3,
+      1,
+      3,
+      5,
+      3,
+      12,
+      12,
+      3,
+      5,
+      3,
+      1,
+      1,
+      3,
+      5,
+      3,
+      12,
+      12,
+      3,
+      5,
+      3,
+      1,
+      3,
+      5,
+      7,
+      5,
+      3,
+      3,
+      5,
+      7,
+      5,
+      3,
+      5,
+      7,
+      10,
+      7,
+      5,
+      5,
+      7,
+      10,
+      7,
+      5,
+      3,
+      5,
+      7,
+      5,
+      3,
+      3,
+      5,
+      7,
+      5,
+      3,
+      12,
+      3,
+      5,
+      3,
+      1,
+      1,
+      3,
+      5,
+      3,
+      12
+    ]
+  },
+  "turn": 0,
+  "totalTurn": 30,
+  "tiled": [
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    },
+    {
+      "type": 0,
+      "player": null
+    }
+  ],
+  "players": [
+    {
+      "id": "2227255c-30db-4761-a571-52e8ca7e7e18",
+      "agents": [
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        }
+      ],
+      "point": {
+        "basepoint": 0,
+        "wallpoint": 0
+      }
+    },
+    {
+      "id": "2227255c-30db-4761-a571-52e8ca7e7e18",
+      "agents": [
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        },
+        {
+          "x": -1,
+          "y": -1
+        }
+      ],
+      "point": {
+        "basepoint": 0,
+        "wallpoint": 0
+      }
+    }
+  ],
+  "log": [],
+  "gameId": "61dfbe96-a6db-4362-8196-5cf56e862213",
+  "gameName": "test",
+  "startedAtUnixTime": 1634863448,
+  "nextTurnUnixTime": 1634863448,
+  "reservedUsers": [],
+  "type": "self"
+}
