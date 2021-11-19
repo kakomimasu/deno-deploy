@@ -1,7 +1,4 @@
-import { Application, Core, oakCors, Router } from "./deps.ts";
-
-import * as util from "./v1/util.ts";
-const resolve = util.pathResolver(import.meta);
+import { Application, oakCors, Router } from "./deps.ts";
 
 import { ExpKakomimasu } from "./v1/parts/expKakomimasu.ts";
 import { errorCodeResponse } from "./v1/error.ts";
@@ -83,25 +80,3 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen({ port });
-
-export const readBoard = (fileName: string) => {
-  const path = resolve(`./board/${fileName}.json`);
-  if (Deno.statSync(path).isFile) {
-    const boardJson = JSON.parse(
-      Deno.readTextFileSync(path),
-    );
-    if (boardJson.points[0] instanceof Array) {
-      boardJson.points = boardJson.points.flat();
-    }
-    /*console.log(
-      boardJson.width,
-      boardJson.height,
-      boardJson.points,
-      boardJson.nagent,
-    );*/
-
-    return new Core.Board(boardJson);
-  } else {
-    throw Error("Can not find Board");
-  }
-};

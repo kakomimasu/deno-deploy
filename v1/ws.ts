@@ -1,4 +1,4 @@
-import { isWebSocketCloseEvent, Router, WebSocket } from "../deps.ts";
+import { Router } from "../deps.ts";
 import type { WsGameRes } from "./types.ts";
 import { ExpGame } from "./parts/expKakomimasu.ts";
 
@@ -52,7 +52,7 @@ const filterGame = (
 export function sendGame(game: ExpGame) {
   return () => {
     clients.forEach((value, ws) => {
-      if (ws.isClosed) {
+      if (ws.readyState === WebSocket.CLOSED) {
         clients.delete(ws);
         return;
       }
@@ -82,8 +82,8 @@ export const wsRoutes = () => {
   router.get(
     "/game",
     async (ctx) => {
-      // TODO
-      /*
+      const sock = await ctx.upgrade();
+
       //console.log("ws connected.");
       const bearerToken = ctx.request.headers.get("sec-websocket-protocol");
       const user = accounts.getUsers().find((user) =>
@@ -99,19 +99,16 @@ export const wsRoutes = () => {
       clients.set(sock, client);
       //console.log("ws client", clients);
 
-      try {
-        for await (const ev of sock) {
-          if (isWebSocketCloseEvent(ev)) {
-            clients.delete(sock);
-          }
-          if (typeof ev !== "string") continue;
+      sock.onmessage = (ev) => {
+        try {
+          if (typeof ev.data !== "string") return;
 
-          const { q, startIndex: sIdx, endIndex: eIdx } = JSON.parse(ev);
+          const { q, startIndex: sIdx, endIndex: eIdx } = JSON.parse(ev.data);
 
           // check json type
-          if (typeof q !== "string") continue;
-          if (typeof sIdx !== "number" && typeof sIdx !== "undefined") continue;
-          if (typeof eIdx !== "number" && typeof eIdx !== "undefined") continue;
+          if (typeof q !== "string") return;
+          if (typeof sIdx !== "number" && typeof sIdx !== "undefined") return;
+          if (typeof eIdx !== "number" && typeof eIdx !== "undefined") return;
 
           const searchOptions = analyzeStringSearchOption(q);
           client.searchOption = searchOptions;
@@ -144,15 +141,19 @@ export const wsRoutes = () => {
 
           sock.send(JSON.stringify(body));
           //console.log(ev);
+        } catch (e) {
+          if (e instanceof Deno.errors.ConnectionAborted) {
+            clients.delete(sock);
+          } else {
+            console.log(e);
+          }
         }
-      } catch (e) {
-        if (e instanceof Deno.errors.ConnectionAborted) {
-          clients.delete(sock);
-        } else {
-          console.log(e);
-        }
-      }
-      */
+      };
+
+      sock.onclose = () => {
+        clients.delete(sock);
+      };
+      ctx.response.status = 200;
     },
   );
 

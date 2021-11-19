@@ -1,8 +1,6 @@
 import { Core, Router } from "../deps.ts";
 
-import { contentTypeFilter, jsonParse, pathResolver } from "./util.ts";
-
-const resolve = pathResolver(import.meta);
+import { contentTypeFilter, jsonParse } from "./util.ts";
 
 import { accounts } from "./user.ts";
 import { sendGame } from "./ws.ts";
