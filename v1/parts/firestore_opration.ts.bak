@@ -37,6 +37,8 @@ async function login() {
   );
 }
 
+await login();
+
 /** 全ユーザ保存 */
 export async function setAllUsers(users: IUser[]): Promise<void> {
   if (users.length == 0) {

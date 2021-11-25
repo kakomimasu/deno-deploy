@@ -1,6 +1,7 @@
 {
   "fmt": {
     "files": {
+      "exclude": ["v1/data/"]
     }
   },
   "lint": {
