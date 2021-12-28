@@ -1,13 +1,12 @@
 // Standard Library
-export { fromFileUrl } from "https://deno.land/std@0.116.0/path/mod.ts";
+export { fromFileUrl } from "https://deno.land/std@0.119.0/path/mod.ts";
 export {
   assert,
   assertEquals,
-} from "https://deno.land/std@0.116.0/testing/asserts.ts";
-export { v4 } from "https://deno.land/std@0.116.0/uuid/mod.ts";
-export * from "https://deno.land/std@0.116.0/ws/mod.ts";
-export { parse as yamlParse } from "https://deno.land/std@0.116.0/encoding/yaml.ts";
-export * as Colors from "https://deno.land/std@0.116.0/fmt/colors.ts";
+} from "https://deno.land/std@0.119.0/testing/asserts.ts";
+export { v4 } from "https://deno.land/std@0.119.0/uuid/mod.ts";
+export { parse as yamlParse } from "https://deno.land/std@0.119.0/encoding/yaml.ts";
+export * as Colors from "https://deno.land/std@0.119.0/fmt/colors.ts";
 
 // Third Party Modules
 export * from "https://deno.land/x/dotenv@v3.1.0/mod.ts";
@@ -15,7 +14,7 @@ export {
   Application,
   Context,
   Router,
-} from "https://deno.land/x/oak@v10.0.0/mod.ts";
+} from "https://deno.land/x/oak@v10.1.0/mod.ts";
 export { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
 export * from "https://deno.land/x/djwt@v2.3/mod.ts";
 

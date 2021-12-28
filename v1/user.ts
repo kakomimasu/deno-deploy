@@ -200,6 +200,7 @@ export const userRouter = () => {
     jsonParse(),
     async (ctx) => {
       const reqData = ctx.state.data as Partial<UserRegistReq>;
+      //console.log(reqData);
 
       if (!reqData.screenName) {
         throw new ServerError(errors.INVALID_SCREEN_NAME);
