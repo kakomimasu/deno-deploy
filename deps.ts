@@ -20,7 +20,6 @@ export * from "https://deno.land/x/djwt@v2.3/mod.ts";
 
 export * as Core from "https://raw.githubusercontent.com/codeforkosen/Kakomimasu/master/mod.ts";
 
-export { default as ApiClient } from "https://raw.githubusercontent.com/kakomimasu/client-js/v1.0.0-beta.5/mod.ts";
 export * from "https://raw.githubusercontent.com/kakomimasu/client-deno/v1.0.0-beta.1/algorithm.js";
 export * from "https://raw.githubusercontent.com/kakomimasu/client-deno/v1.0.0-beta.1/client_a1.js";
 export * from "https://raw.githubusercontent.com/kakomimasu/client-deno/v1.0.0-beta.1/client_a2.js";
